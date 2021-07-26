@@ -1,0 +1,129 @@
+header{
+    .top-nav{
+        @include sbetween;
+        width: 100%;
+        height: 40px;
+        background-color: $violet-bgopa;
+        .header-contact{
+            margin-left: 100px;
+            display: flex;
+
+
+            .sartel,
+            .sarmail{
+                margin-left: 10px;
+                a{
+                    color: #000;
+                    font-size: 15px;
+                    i{
+                        margin-right: 5px;
+                        color: $violet-orginal;
+                    }
+                }
+            }
+
+            
+        }
+        .header-lgicons{
+            width: 16%;
+            @include sevenly;
+            i{
+                color: $violet-orginal;
+            }
+        }
+    }
+    nav{
+        @include saround;
+        width: 100%;
+        height: 70px;
+        ul{
+            width: 40%;
+            @include sevenly;
+            li{
+                a{
+                    font-family: sans-serif;
+                    font-size: 15px;
+                    color: #000;
+                    font-weight: bolder;
+                }
+            }
+        }
+        .header-btn{
+            padding: 9px 15px;
+            background: none;
+            border: 1px solid $violet-orginal;
+            color: $violet-orginal;
+            border-radius: 5px;
+            transition: .5s;
+            &:hover{
+                cursor: pointer;
+                background-color: $violet-orginal;
+                color: #fff;
+                i{
+                    color: #fff;
+                }
+            }
+            i{
+                color: $violet-orginal;
+                
+            }
+        }
+    }
+}
+
+.sec-1{
+    width: 100%;
+    height: 750px;
+    background-image: url('../img/hero_1.jpg');
+    background-size: cover;
+    @include center;
+    .secone-center{
+        @include sbetween;
+        flex-direction: column;
+        height: 149px;
+        h1{
+            margin-bottom: 30px;
+            color: #fff;
+            font-size: 57px;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+        .input-box{
+            padding: 0px 20px;
+            @include sbetween();
+            width: 1200px;
+            height: 100px;
+            background-color: rgba($color: #fff, $alpha: .6);
+            input{
+                width: 470px;
+                height: 45px;
+                border-radius: 5px;
+                border: none;
+            }
+            select{
+                color: #5f5f5f;
+                width: 183px;
+                height: 45px;
+                border: none;
+                border-radius: 5px;
+            }
+            button{
+                @include center();
+                border: none;
+                border-radius: 5px;
+                transition: .5s;
+                width: 119px;
+                height: 45px;
+                background-color: $violet-orginal;
+                color: #fff;
+                &:hover{
+                    background-color: #fff;
+                    color: $violet-orginal;
+                }
+            }
+            span{
+                color:#fff;
+            }
+        }
+    }
+}
