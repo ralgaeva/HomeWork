@@ -1,0 +1,359 @@
+header{
+    .nav{
+        @include saround;
+        width: 100%;
+        height: 70px;
+        background-color: #262626;
+        ul{
+            width: 40%;
+            @include sevenly;
+            margin-right: 150px;
+            li{
+                a{
+                    font-family: sans-serif;
+                    margin-left: 50px;
+                    font-size: 15px;
+                    color: #a8a8a8;
+                    font-weight: bolder;
+                    &:hover{
+                        cursor: pointer;
+                        color: #fff;
+                    }
+                    .fa-chevron-down{
+                        font-size: 10px;
+                        margin-top: 2px;
+                        margin-left: 5px;
+                        position: absolute;
+                        float: right;
+                    }
+                }
+            }
+        }
+        .header-btn{
+            padding: 13px 20px;
+            background: $colorr2;
+            font-weight: bolder;
+            border: 5px;
+            color: rgba(0, 0, 0, 0.596);
+            border-radius: 5px;
+            transition: 0;
+            &:hover{
+                cursor: pointer;
+                background-color: rgb(252, 82, 31);
+            }
+        }
+        .btn1{
+            a{
+                i{
+                    color: #999999;
+                    margin-right: 35px;
+                }
+            }
+        }
+    }
+}
+.sec-1{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.884);
+    @include sbetween;
+    .textbox{
+        width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: 100px;
+    margin-top: 100px;
+    p{
+    color: $colorr1;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    font-weight: 300;
+    }
+    h1{
+    display: block;
+    margin-block-start: 3px;
+    margin-block-end: 3px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 15px;
+    line-height: 1.3em;
+    color:#fff;
+    font-weight: bolder;
+    font-size: 60px;
+    font-family: 'Oswald', sans-serif;
+    }
+    .btn{
+    padding: 8px 20px;
+    margin-top: 35px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    border: 2px solid $colorr2;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.11);
+    overflow: visible;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: .1s;
+    &:hover{
+        color: #fff;
+        border: 2px solid #fff;
+    }
+    }
+    }
+    .img1{
+        margin-right: 55px;
+    }
+}
+
+.sec-2{
+    width: 100%;
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.918);
+    @include sbetween;
+    .mxw800p{
+        display: flex;
+        @include sbetween;
+        h1{
+            display: block;
+            margin-bottom: 5px;
+            margin-left: 50px;
+            color: #fff;
+            font-weight: bolder;
+            font-size: 34px;
+            font-family: 'Oswald', sans-serif;
+            span{
+                color: $colorr2;
+            }
+        }
+        .button3{
+            padding: 8px 20px;
+            margin-left: 500px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            font-size: 15px;
+            font-family: 'Lato', sans-serif;
+            color: #fff;
+            border: 2px solid $colorr2;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.11);
+            overflow: visible;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: .1s;
+    &:hover{
+        color: #fff;
+        border: 2px solid #fff;
+    }
+        .fa-angle-right{
+             margin-left: 6px;
+            }
+        }
+    }
+}
+.sec-3{
+    width: 100%;
+    height: 650px;
+    background-color: rgb(248, 231, 231);
+    @include sbetween;
+    text-align: start;
+    .box-1{
+        display: inline-block;
+    width: 300px;
+    height: 100px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    h4{
+        color: rgb(0, 0, 0);
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+    h6{
+        width: 400px;
+        font-size: 20px;
+        color: rgb(129, 128, 128);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    }
+    .box-2{
+        display: inline-block;
+    width: 300px;
+    height: 100px;
+    margin-left: 400px;
+    h4{
+        color: rgb(0, 0, 0);
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+    h6{
+        width: 400px;
+        font-size: 20px;
+        color: rgb(129, 128, 128);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    }
+    .box-3{
+        display: inline-block;
+    width: 300px;
+    height: 100px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    h4{
+        color: rgb(0, 0, 0);
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+    h6{
+        width: 400px;
+        font-size: 20px;
+        color: rgb(129, 128, 128);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    }
+    .box-4{
+        display: inline-block;
+    width: 300px;
+    height: 100px;
+    margin-left: 400px;
+    h4{
+        color: rgb(0, 0, 0);
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+    h6{
+        width: 400px;
+        font-size: 20px;
+        color: rgb(129, 128, 128);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    }
+}
+.sec-4{
+    .bx3{
+        @include center;
+        width: 100%;
+        height: 450px;
+        background: rgb(223, 219, 219);
+        .imgbx3{
+            display: flex;
+            margin-top: 100px;
+            margin-left: 130px;
+        }
+        .textbx3{
+            width: 100%;
+            margin-bottom: 10px;
+            span{
+                font-size: 14px;
+                color: $colorr2;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            h2{
+                margin-top: 20px;
+                text-align: initial;
+                font-size: 35px;
+                font-family: sans-serif;
+                font-weight: bolder;
+            }
+            p{
+                margin-top: 20px;
+                font-size: 18px;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color:rgb(146, 137, 137);
+            }
+            .text31{
+                margin-top: 65px;
+                text-align: inherit;
+                margin-right: 50px;
+                @include sevenly;
+                display: flex;
+                i{
+                    font-size: 36px;
+                    margin: 0 40px 0;
+                }
+                p{
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+.sec-5{
+    @include center;
+    width: 100%;
+    height: 333px;
+    .textc{
+        h1{
+            text-align: center;
+            margin-bottom: 50px;
+            display: block;
+            font-size: 19px;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+    }
+    .center0{
+        @include sevenly;
+        
+    }
+    .text9{
+        margin-top: 50px;
+        margin-left: 120px;
+        p{
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            width: 647px;
+            height: 48px;
+            border:1px solid grey;
+            border-radius: 5px;
+            span{
+                text-align: center !important;
+                display: block;
+                color: grey;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    a{
+        padding: 8px 16px;
+            cursor: pointer;
+            font-size: 10px;
+            font-family: 'Lato', sans-serif;
+            color: #fff;
+            border: 1px solid $colorr2;
+            border-radius: 5px;
+            background-color: $colorr2;
+            overflow: visible;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: .1s;
+    i{
+        margin-left: 5px;
+    }
+    &:hover{
+        color: #fff;
+        border: 1px solid $colorr2;
+        background-color: rgba(255, 60, 0, 0.795);
+    }
+    }
+        }
+        
+    }
+}
+
+}

@@ -1,0 +1,23 @@
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin saround {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@mixin sbetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin sevenly {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
