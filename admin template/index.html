@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Admin Template</title>
+    
+</head>
+<body>
+
+<input type="checkbox" id="check">
+
+<heaeder>
+    <label for="check">
+        <i class="fas fa-bars" id="sidebar_btn"></i>
+    </label>
+    <div class="left-area">
+        <img src="img/logo.png" style="margin-right: 170px;" alt="">
+    </div>
+    <div class="right-area">
+        <input class="search" type="text" placeholder="Search">
+        <a href="#"><i class="far fa-star"></i></a>
+        <a href="#"><i class="far fa-bell"></i></a>
+        <a href="#"><i class="far fa-moon"></i></a>
+        <a href="#"><i class="far fa-comment-alt"></i></a>
+        <button class="btn"><i class="fas fa-sign-out-alt"></i>Log Out</button>
+    </div>
+</heaeder>
+
+<div class="sidebar">
+    <center>
+        <img src="img/1.png" class="profile_image" style="border: 10px solid rgb(209, 206, 206); border-radius: 60px;" alt="">
+        <h1>Emay Walter</h1>
+        <h2>Human Resources Department</h2>
+        <ul>
+            <li>19.8k<br>
+            <span>Follow</span></li>
+            <li>2 year<br>
+                <span>Experince</span></li>
+                <li>95.2k<br>
+                    <span>Follower</span></li>
+        </ul>
+    </center>
+    <h3>General</h3>
+    <a href="#"><i class="fas fa-home"></i><span>Dashboar</span></a>
+    <a href="#"><i class="fas fa-desktop"></i><span>Widgets</span></a>
+    <a href="#"><i class="fas fa-table"></i><span>Page Layout</span></a>
+    <h3>Components</h3>
+    <a href="#"><i class="fas fa-cube"></i><span>UI Kits</span></a>
+    <a href="#"><i class="far fa-folder"></i><span>Bonus Ui</span></a>
+    <a href="#"><i class="fas fa-pen-fancy"></i><span>Builders</span></a>
+</div>
+
+<div class="content">
+    <div class="left">
+        <div class="up">
+            <img src="img/bg.jpg" width="404px" height="263px" alt="">
+            <div class="up-text">
+                <h1>Wellcome Back, John!!</h1>
+            <p>Welcome to the viho Family! we are glad that<br> you are visite this dashboard. we will be happy<br> to help you grow your business.</p>
+            <button class="up-btn">Update</button>
+            </div>
+        </div>
+        <div class="down">
+            <div class="box1">
+                <a href="#"><i class="far fa-circle"></i></a>
+                <h1>8,50,49</h1>
+                <p>Our Annual Income</p>
+                <h2><i class="fas fa-arrow-up"></i>95.54%</h2>
+            </div>
+            <div class="box1">
+                <a href="#"><i class="far fa-circle"></i></a>
+                <h1>2,03,59</h1>
+                <p>Our Annual Losses</p>
+                <h2><i class="fas fa-arrow-up"></i>90.54%</h2>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div id="chart" style="width: 630px; height: 600px;"></div>
+    </div>
+</div>
+
+
+<div class="content2">
+    <div class="card1">
+        <div id="chart2" style=" width: 343px; height: 515px;"></div>
+    </div>
+    <div class="card2">
+        <h1>Latest Activity</h1>
+        <div class="card-text">
+            <div class="text-left">
+                <ul>
+                    <li>
+                        <i class="fas fa-chart-line"></i>
+                        <h1>Google project Apply Review<br><span>Complete in 3 Hours</span></h1>
+                    </li>
+                    <li>
+                        <i class="fas fa-briefcase"></i>
+                        <h1>Business Project Research<br><span>Due in 1 hour</span></h1>
+                    </li>
+                    <li>
+                        <i class="far fa-lightbulb"></i>
+                        <h1>Business Logo Create<br><span>Complete in 2 Days</span></h1>
+                    </li>
+                    <li>
+                        <i class="far fa-address-card"></i>
+                        <h1>Recruitment in IT Depertment<br><span>Complete in 3 Hours</span></h1>
+                    </li>
+                    <li>
+                        <i class="far fa-arrow-alt-circle-down"></i>
+                        <h1>Submit Riverfront Project<br><span>Complete in 2 Days</span></h1>
+                    </li>
+                </ul>
+            </div>
+            <div class="text-right">
+                <div class="right1">
+                    <ul>
+                        <li>Edit</li>
+                        <li>Edit</li>
+                        <li>Edit</li>
+                        <li>Edit</li>
+                        <li>Edit</li>
+                    </ul>
+                </div>
+                <div class="right2">
+                    <ul>
+                        <li>Delete</li>
+                        <li>Delete</li>
+                        <li>Delete</li>
+                        <li>Delete</li>
+                        <li>Delete</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card3">
+        <div id="chart3"></div>
+    </div>
+</div>
+
+
+<div class="content3">
+  <div class="card4">
+    <h1>Recent Orders</h1>
+    <div class="card-text4">
+      <div class="left4">
+        <ul>
+          <li>
+            Name
+          </li>
+          <li>
+            <img src="img/product-1.png" alt="">
+            <h2>Yellow New Nike shoes</h2>
+          </li>
+          <li>
+            <img src="img/product-2.png" alt="">
+           <h2> Sony Brand New Headphone</h2>
+          </li>
+          <li>
+            <img src="img/product-3.png" alt="">
+            <h2>Beautiful Golden Tree plant</h2>
+          </li>
+          <li>
+            <img src="img/product-4.png" alt="">
+            <h2>Marco M Kely Handbeg</h2>
+          </li>
+          <li>
+            <img src="img/product-5.png" alt="">
+            <h2>Being Human Branded T-Shirt</h2>
+          </li>
+        </ul>
+      </div>
+      <div class="right4">
+        <div class="list1">
+          <ul>
+            <li>Date</li>
+            <li>16 August</li>
+            <li>2 October</li>
+            <li>21 March</li>
+            <li>31 December</li>
+            <li>26 January</li>
+          </ul>
+        </div>
+        <div class="list2">
+          <ul>
+            <li>Quantity</li>
+            <li>54146</li>
+            <li>32015</li>
+            <li>12548</li>
+            <li>15495</li>
+            <li>56625</li>
+          </ul>
+        </div>
+        <div class="list3">
+          <ul>
+            <li>Value</li>
+            <li><img src="img/graph-1.png" alt=""></li>
+            <li><img src="img/graph-2.png" alt=""></li>
+            <li><img src="img/graph-3.png" alt=""></li>
+            <li><img src="img/graph-4.png" alt=""></li>
+            <li><img src="img/graph-5.png" alt=""></li>
+          </ul>
+        </div>
+        <div class="list4">
+          <ul>
+            <li>Rate</li>
+            <li>$210326</li>
+            <li>$548526</li>
+            <li>$589565</li>
+            <li>$125424</li>
+            <li>$112103</li>
+          </ul>
+        </div>
+        <div class="list5">
+          <ul>
+            <li>Rate</li>
+            <li>Done</li>
+            <li>Done</li>
+            <li>Done</li>
+            <li>Done</li>
+            <li>Done</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card5">
+    <div id="chart4"></div>
+  </div>
+</div>
+
+
+
+<script src="js/mychart.js"></script>
+
+</body>
+</html>
