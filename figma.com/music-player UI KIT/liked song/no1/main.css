@@ -1,0 +1,66 @@
+.player {
+    margin-top: 130px;
+    width: 320px;
+    background-color: var(--bg);
+    display: grid;
+    grid-template-columns: 48px 1fr 48px;
+    grid-gap: 16px;
+    padding: 8px 8px;
+    position: relative;
+    border-radius: 64px;
+}
+
+.control,#current {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playbtn {
+    font-size: 20px;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(105, 145, 206);
+    cursor: pointer;
+}
+
+#playbtn:hover {
+    -webkit-text-fill-color: rgb(55, 99, 165);
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+}
+.info h1{
+    color: aliceblue;
+    font-size: 18px;
+}
+#current {
+    text-align: right;
+}
+
+.bar {
+    --space: -4px;
+    background-color: #24242424;
+    overflow: hidden;
+    left: var(--space);
+    right: var(--space);
+    top: var(--space);
+    bottom: var(--space);
+    position: absolute;
+    border-radius: 64px;
+    z-index: -2;
+}
+
+#progress {
+    display: blcok;
+    width: var(--progress,0%);
+    background: rgb(205,17,71);
+background: linear-gradient(90deg, rgba(205,17,71,1) 0%, rgba(240,38,79,1) 50%, rgba(217,34,34,1) 100%);
+    transition: all 1s linear;
+    height: 100%;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Poppins:wght@500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@700;800&family=Poppins:wght@500;700&display=swap');
+        body{
+            font-family: sans-serif;
+            width: 375px;
+            height: 800px;
+            margin: 20px 15px;
+            background-color: #091227;
+            overflow-x: hidden;
+        }
+        #mainbox{
+            background-color: #091227;
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+            transition: all .6s;
+        }
+        .sidemenu{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 0;
+            background-color: #091227;
+            z-index: 1;
+            padding-top: 100px;
+            overflow-x: hidden;
+            transition: all .5s;
+        }
+        .sidemenu a{
+            padding: 8px 8px 8px 40px;
+            text-decoration: none;
+            font-size: 15px;
+            color: #DFE8FF;
+            display: block;
+        }
+        .sidemenu a i{
+            transition: .2s;
+            padding-right: 7px;
+            color: #56617E;
+        }
+        .sidemenu a i:hover{
+            color: #18A0FB;
+        }
+        .sidemenu .closebtn{
+            position: absolute;
+            top: 0px;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 32px;
+        }
+        .sec-1 h1{
+            margin-top: 30px;
+            font-family: 'Nunito';
+            font-weight: bold;
+    color: #EAF0FF;
+    font-size: 28px;
+        }
+        .sec-1 .large-boxes{
+            display: flex;
+            overflow-x: scroll;
+        }
+        .sec-1 .large-boxes .large-boxes__box{
+            display: flex;
+            flex-direction: column;
+            padding: 0px 15px 0px 15px;
+        }
+        .sec-1 .large-boxes .large-boxes__box h2{
+            text-align: center;
+            color: #fff;
+            font-size: 17px;
+            font-weight: bold;
+            font-family: Montserrat;
+        }
+        .sec-1 .large-boxes .large-boxes__box h2 span{
+            text-align: center;
+            color: rgb(168, 166, 166);
+            font-size: 13px;
+            font-weight: bold;
+            font-family: Montserrat;
+        }
+        .sec-1 .large-boxes .large-boxes__box img{
+            width: 160px;
+            height: 160px;
+            border-radius: 7px;
+        }
+        footer{
+            margin-top: 50px;
+            border-top: 2px solid #565B6A;
+        }
+        .play-bar{
+            margin-top: 10px;
+            display: flex;
+        }
+        .play-bar .img img{
+            width: 80px;
+            height: 80px;
+        }
+        .play-bar .song-info{
+            display: flex;
+        }
+        .play-bar .song-info .title h3{
+            margin-left: 16px;
+            margin-top: 20px;
+            font-size: 15px;
+            color: #56617E;
+            font-family: Montserrat;
+        }
+        .play-bar .song-info .title h3 span{
+            font-size: 16px;
+            color: #fff;
+            font-family: Montserrat;
+        }
+        .play-bar .song-info .actions i{
+            margin-left: 100px;
+            margin-top: 30px;
+            font-size: 17px;
+            color: #fff;
+        }
+       
+        </style>
+</head>
+<body>
+        <div id="mainbox" onclick="openFunction()">&#9776;</div>
+    
+    <div id="menu" class="sidemenu">
+        <a href="#"><i class="far fa-user"></i>Profile</a>
+        <a href="liked song/index.html"><i class="far fa-heart"></i>Liked Songs</a>
+        <a href="#"><i class="fas fa-globe-americas"></i>Language</a>
+        <a href="#"><i class="far fa-comment-dots"></i>Contact Us</a>
+        <a href="#"><i class="far fa-lightbulb"></i>FAQs</a>
+        <a href="#"><i class="fas fa-cog"></i>Settings</a>
+        <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+    </div>
+
+    <div class="sec-1">
+        <h1>Recommended for you</h1>
+
+        <div class="large-boxes">
+            <div class="large-boxes__box">
+                <img src="img/unnamed.jpg" style="box-shadow: 5px 10px 18px rgb(199, 35, 71);" alt="">
+                <h2>God's Plan<br> <span>DRAKE</span></h2>
+            </div>
+            <div class="large-boxes__box">
+                <img src="img/71AyfVKzxLL._SL1427_.jpg" style="box-shadow: 5px 10px 18px rgb(75, 104, 160);" alt="">
+                <h2>New Rules<br> <span>DUA LIPA</span></h2>
+            </div>
+            <div class="large-boxes__box">
+                <img src="img/1600.jpg" style="box-shadow: 5px 10px 18px rgb(228, 216, 54);" alt="">
+                <h2>I Like It<br> <span>CARDI B</span></h2>
+            </div>
+            <div class="large-boxes__box">
+                <img src="img/1500.jpeg" style="box-shadow: 5px 10px 18px rgb(192, 188, 194);" alt="">
+                <h2>Star Shopping<br> <span>LIL PEEP</span></h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="sec-1">
+        <h1>My Playlist</h1>
+
+        <div class="large-boxes">
+            <div class="large-boxes__box">
+                <img src="img/R-9778299-1486203687-6535.jpeg.jpg" style="box-shadow: 5px 10px 18px rgb(219, 133, 62);" alt="">
+                <h2>Believer<br> <span>IMAGINE DRAGONS</span></h2>
+            </div>
+            <a href="liked song/no1/index.html">
+                <div class="large-boxes__box">
+                    <img src="img/0060255721235_600.jpg" style="box-shadow: 5px 10px 18px rgb(201, 7, 56);" alt="">
+                    <h2>Starboy<br> <span>THE WEEKND</span></h2>
+                </div>
+            </a>
+            <div class="large-boxes__box">
+                <img src="img/2001400047.png" style="box-shadow: 5px 10px 18px rgb(172, 174, 177);" alt="">
+                <h2>Look at me<br> <span>XXXTENTACION</span></h2>
+            </div>
+            <div class="large-boxes__box">
+                <img src="img/post-malone-beerbongs-bentleys-cd.jpg" style="box-shadow: 5px 10px 18px rgb(139, 219, 48);" alt="">
+                <h2>Rockstar<br> <span>POST MALONE</span></h2>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="play-bar">
+                
+                    <div class="img">
+                        <img src="img/2001400047.png" alt="">
+                    </div>
+                    <div class="song-info">
+                        <div class="title">
+                            <h3><span>Look At Me!</span><br> XXXTENTACION</h3>
+                        </div>
+    
+                        <div class="actions">
+                            <i class="fas fa-pause"></i>
+                        </div>
+                    </div>
+                
+            
+        </div>
+    </footer>
+
+<script type="text/javascript">
+function openFunction(){
+    document.getElementById("menu").style.width="200px";
+    document.getElementById("mainbox").style.marginleft="300px"
+}
+function closeFunction(){
+    document.getElementById("menu").style.width="0px";
+    document.getElementById("mainbox").style.marginleft="0px"
+}
+</script>
+
+</body>
+</html>

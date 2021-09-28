@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./main.css">
+    <title>Music Player</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&family=Poppins:wght@500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito:wght@700;800&family=Poppins:wght@500;700&display=swap');
+    body{
+            font-family: sans-serif;
+            margin: 20px 15px;
+            width: 375px;
+            height: 812px;
+            background: rgb(77,92,125);
+background: linear-gradient(0deg, rgba(77,92,125,1) 0%, rgba(42,59,97,1) 51%, rgba(9,18,39,1) 100%);
+            overflow-x: hidden;
+        }
+        .mainbox a{
+            color: #fff;
+            margin-left: 10px;
+            font-size: 18px;
+        }
+        .main img{
+            margin-top: 50px;
+            width: 300px;
+            margin-left: 25px;
+            height: 300px;
+            border-radius: 10px;
+        }
+        .main h2{
+            text-align: center;
+            margin-right: 20px;
+            font-size: 25px;
+            font-family: Nunito;
+            color: #fff;
+        }
+        .main h2 span{
+            color: rgb(255, 0, 64);
+        }
+        .button{
+          margin-top: 40px;
+          display: flex;
+    align-items: center;
+    justify-content: space-around;
+        }
+        .button a{
+          color: #969696;
+          font-size: 19px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+        <a href="http://127.0.0.1:5500/figma.com/music-player%20UI%20KIT/liked%20song/index.html"><i class="fas fa-long-arrow-alt-left"></i></a>
+    </div>
+    <div class="main">
+        <img src="img/0060255721235_600.jpg" style="box-shadow: rgba(231, 40, 81, 0.527) 0px 1px 1px 0px inset, rgba(224, 33, 81, 0.534) 0px 50px 100px -20px, rgba(235, 41, 41, 0.493) 0px 30px 60px -30px;" alt="">
+        <h2><span>The Weeknd</span><br> Starboy</h2>
+    </div>
+    <div class="button">
+      <a href="#"><i class="fas fa-volume-down"></i></a>
+      <a href="#"><i class="fas fa-random"></i></a>
+    </div>
+    <audio id="player" src="audio/starboy.mp3"></audio>
+    <div class="player">
+      <div class="control">
+        <i class="fas fa-play" id="playbtn"></i>
+      </div>
+      <div class="info">
+        <h1>The Weeknd-Starboy</h1>
+        <div class="bar">
+          <div id="progress"></div>
+        </div>
+      </div>
+
+      <div id="current">0:00</div>
+    </div>
+
+    <script src="./player.js"></script>
+</body>
+</html>
